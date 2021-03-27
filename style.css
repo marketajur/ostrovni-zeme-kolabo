@@ -4,16 +4,10 @@
     box-sizing: border-box;   
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 :root {
-    --hue-neutral:2001;
+    /* --hue-neutral:2001;
     --hue-wrong: 0;
-    --hue-correct:145;
+    --hue-correct:145; */
 }
 
 .hide {
@@ -25,13 +19,12 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: center;
     background-image: url('pozadi.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 22%; /*50*/
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'segoe ui';
     transition: background-position-y 2s;
 }
@@ -40,33 +33,30 @@ button {
     cursor: pointer;
 }
 
-section.uvod > header  {
-    /* background: rgba(255, 0, 0, 0.5); */
-}
 
-section.uvod > header > h1 {
-    /* background:rgba(0, 255, 0, 0.5); */
-    font-size: 5em;
-    font-weight: 400;
-    font-family: 'segoe ui';
-    text-align: center;
-    text-shadow: 0px 0px 8px black;
-    color: white;
-    width: 800px;
-    margin-right: 20%;
-    margin-top: 40%;
-}
+/* SEKCE UVOD */
 
 section.uvod {
-    /* justify-content: space-between; */
     flex-direction: column;
     height: 100vh;
     display: flex;
+    justify-content: space-evenly;
 }
 
-section.uvod > button {
-    margin: 0 auto;
+section.uvod > header  {
+}
+
+section.uvod > header > h1 {
+    font-size: 5em;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+    color: white;
+}
+
+section.uvod > header > button {
     display: block;
+    margin: 0 auto;
     padding: 20px 75px;
     border:solid white;
     font-size: 1.5em;
@@ -74,9 +64,9 @@ section.uvod > button {
     color:white;
     text-shadow: 0px 0px 8px black;
     font-weight: bold;
-}
+} 
        
-#open-fullscreen-btn {
+section.uvod > #tlacitko-fullscreen {
     background-color: transparent;
     color: white;
     opacity: 0.4;
@@ -86,59 +76,76 @@ section.uvod > button {
     right:0;
     padding: 0.5em;
     cursor: pointer;
-}    
-
-section.rozhodovani > header  {
-    /* background: rgba(255, 0, 0, 0.5); */
-    clear: both;
-    position: relative;
 }
 
-section.rozhodovani > header > h2 {
-    /* background: rgba(0, 250, 0, 0.5); */
+
+/* SEKCE MOZNOSTI */
+
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+section > .radek-1,
+section > .radek-2,
+section > .radek-3 {
+    padding: 3vw;
+    padding-bottom: 0;
+}
+
+section.rozhodovani > .radek-1  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+section.rozhodovani > .radek-1 > h2 {
     font-size: 3em;
     font-weight: 400;
     text-align: right;
     text-shadow: 0px 0px 8px black;
     color: white;
-    width: 70%;
-    float: right;
-    margin-right: 6%;
-    margin-top: 6%;
+    width: 65vw;
 }
 
-#moznosti-rozhodnuti{
-    padding:5%;
-    /* background: #aaa; */
+section.rozhodovani > .radek-2 {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
-#moznosti-rozhodnuti > button {
+section.rozhodovani > .radek-2 > button {
     border:solid 1.5px hsl(204deg 94% 13%); 
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    display: inline-flex;
-    width:25%;
-    margin-right:2.5%;
-    padding:1em;
     line-height:1.5em;
     background: hsla(0, 0%, 100%, 0.5);
     backdrop-filter: blur(10px);
     color:hsl(204deg 94% 13%);
     outline: none;
-    min-height: 12em;
-    flex-grow: 1;
-    width: 10%;
     font-size: 2em;
     font-weight: 500;
+    
+    width:29vw;
+    padding: 3vw;
+    font-size: 2.2em;
 }
 
-#moznosti-rozhodnuti > button:last-child {
-    margin-right: 0;
-}    
+section.rozhodovani > .radek-2 > button:last-child {
+}
 
-#tlacitka > button {
-    margin: 0 auto;
+section.rozhodovani > .radek-3 {
+    flex-grow: 1;
+}
+
+section.rozhodovani > .radek-3 > button {
+    /* margin: 0 auto;
     display: block;
     padding: 20px 75px;
     border:solid white;
@@ -147,18 +154,28 @@ section.rozhodovani > header > h2 {
     color:white;
     text-shadow: 0px 0px 8px black;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer; */
 }
+
+
+/* SEKCE VYHODNOCENI */
+
 
 section.vyhodnoceni {
-    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3vw;
 }
 
-section.vyhodnoceni > header > h2 {
-    margin: 0 auto;
-    margin-top: 75px;
-    display: block;
+section.vyhodnoceni > .radek-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.vyhodnoceni > .radek-1 > h2 {
     padding: 20px 40px;
+    margin: 0;
     border:solid white;
     font-size: 3.5em;
     background: hsla(0,0%,0%,0);
@@ -166,46 +183,40 @@ section.vyhodnoceni > header > h2 {
     text-shadow: 0px 0px 7px black;
     text-align: center;
     width: fit-content;
+    margin-bottom: 2vw;
 }
 
-section.vyhodnoceni > header > p {
+section.vyhodnoceni > .radek-1 > p {
     font-size: 2em;
     background: hsla(0,0%,0%,0);
     color:white;
     text-shadow: 0px 0px 7px black;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
-#boxy-vyhodnoceni{
-    margin-top: 80px;
-    margin:2px;
-    margin-right: 200px;
-    line-height:2em;  
+section.vyhodnoceni > .radek-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#boxy-vyhodnoceni > p {
+section.vyhodnoceni > .radek-2 > p {
     border:solid 1.5px hsl(204deg 94% 13%); 
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    display: block;
-    width:120%;
     text-align: center;
-    padding-top: 70px;
     line-height:1.5em;
     background: hsla(0, 0%, 100%, 0.3);
     backdrop-filter: blur(10px);
     color:hsl(204deg 94% 13%);
     outline: none;
-    min-height: 7em;
-    font-size: 1.3em;
+    font-size: 1.8em;
+    flex-grow: 1;
+    padding: 2vw;
+    margin:1vw
 }
 
-#boxy-vyhodnoceni > p + p {
-    margin-top: 30px;
-}
-
-#restart-btn {
+section.vyhodnoceni > #restart-btn {
     background-color: transparent;
     color: white;
     opacity: 0.4;
@@ -216,3 +227,29 @@ section.vyhodnoceni > header > p {
     padding: 0.5em;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 8px;
+    }
+
+    section.rozhodovani > .radek-1 {
+        flex-grow: 1;
+    }
+
+    section.rozhodovani > .radek-1 > h2 {
+        width: 90vw;
+    }
+
+    section.rozhodovani > .radek-2 {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 2;
+    }
+
+    section.rozhodovani > .radek-2 > button{
+        width: 94vw
+    }
+}
+
+
