@@ -32,6 +32,18 @@ body {
 button {
     cursor: pointer;
 }
+       
+#tlacitko-fullscreen {
+    background-color: transparent;
+    color: white;
+    opacity: 0.4;
+    font-size: 3em;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    padding: 0.5em;
+    cursor: pointer;
+}
 
 
 /* SEKCE UVOD */
@@ -65,18 +77,6 @@ section.uvod > header > button {
     text-shadow: 0px 0px 8px black;
     font-weight: bold;
 } 
-       
-section.uvod > #tlacitko-fullscreen {
-    background-color: transparent;
-    color: white;
-    opacity: 0.4;
-    font-size: 3em;
-    position: absolute;
-    bottom: 0;
-    right:0;
-    padding: 0.5em;
-    cursor: pointer;
-}
 
 
 /* SEKCE MOZNOSTI */
