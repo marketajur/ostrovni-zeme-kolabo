@@ -1,6 +1,7 @@
 const startButton = document.getElementById('btn-zacit')
 const restartButton = document.getElementById('restart-btn')
 // const nextButton = document.getElementById('schvalit-btn')
+const openFullScreen = document.getElementById('open-fullscreen-btn')
 const questionContainerElement = document.getElementById('rozhodovani')
 const questionElement = document.getElementById('zneni-otazky')
 const answerButtonsElement = document.getElementById('moznosti-rozhodnuti')
@@ -24,6 +25,41 @@ restartButton.addEventListener('click', ()=> {
     sekceVyhodnoceni.classList.add('hide')
 })
 
+openFullScreen.addEventListener('click', toggleFullscreen)
+
+var jsemFullscreen = 0
+function toggleFullscreen() {
+  if(jsemFullscreen) {
+    closeFullscreen()
+    jsemFullscreen=0
+  } else {
+    openFullscreenFunkce()
+    jsemFullscreen=1
+  }
+}
+
+var elem = document.documentElement;
+function openFullscreenFunkce() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+}
+
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
+    
+
 function startGame() {
     console.log('uvod') 
     sekceUvod.classList.add('hide')
@@ -32,6 +68,7 @@ function startGame() {
     currentQuestionIndex = 0
     setNextQuestion()
 }
+
 
 function vyhodnoceni() {
     console.log('vyhodnoceni') 

@@ -98,7 +98,17 @@ section.uvod > button {
     /* justify-content: top;
     display: flex */
    
-    
+    #open-fullscreen-btn {
+        background-color: transparent;
+        color: white;
+        opacity: 0.4;
+        font-size: 3em;
+        position: absolute;
+        bottom: 0;
+        right:0;
+        padding: 0.5em;
+        cursor: pointer;
+        }    
 
 section.rozhodovani > header  {
     /* background: rgba(255, 0, 0, 0.5); */
@@ -170,7 +180,7 @@ section.rozhodovani > header > h2 {
   cursor: pointer;
 
 }
-sectiom.vyhodnoceni {
+section.vyhodnoceni {
     margin-top: 15px;
    
     }
