@@ -2,20 +2,19 @@
 
 *, *::before, *::after {
     box-sizing: border-box;   
-}
+   }
 
-.clearfix::after {
+   .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+  }
 
 :root {
     --hue-neutral:2001;
     --hue-wrong: 0;
     --hue-correct:145;
-}
-
+    }
 .hide {
     display: none !important;
 }
@@ -35,17 +34,25 @@ body {
     font-family: 'segoe ui';
     transition: background-position-y 2s;
 }
-
 button {
     cursor: pointer;
 }
-
 section.uvod > header  {
     /* background: rgba(255, 0, 0, 0.5); */
 }
 
 section.uvod > header > h1 {
     /* background:rgba(0, 255, 0, 0.5); */
+    /* padding-left: 100px;
+    padding-right: 70px;
+    margin-left: 450px;
+    margin-right: 400px;
+    margin-top: 180px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    font-family: 'Ruda';
+    color: white; */
     font-size: 5em;
     font-weight: 400;
     font-family: 'segoe ui';
@@ -59,34 +66,49 @@ section.uvod > header > h1 {
 
 section.uvod {
     /* justify-content: space-between; */
-    flex-direction: column;
-    height: 100vh;
-    display: flex;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
 }
-
 section.uvod > button {
+    /* margin-left: 600px; 
+    margin-right: 90px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px; */
     margin: 0 auto;
     display: block;
     padding: 20px 75px;
     border:solid white;
     font-size: 1.5em;
-    background: hsla(0,0%,0%,0);
+     background: hsla(0,0%,0%,0);
     color:white;
     text-shadow: 0px 0px 8px black;
-    font-weight: bold;
-}
-       
-#open-fullscreen-btn {
-    background-color: transparent;
-    color: white;
-    opacity: 0.4;
-    font-size: 3em;
-    position: absolute;
-    bottom: 0;
-    right:0;
-    padding: 0.5em;
-    cursor: pointer;
-}    
+  font-family: 'segoe ui';
+  font-weight: bold;}
+    /* margin-bottom: 0px;
+    margin-top: 5%;
+    padding: 20px 100px;
+    border:solid white;
+    background: hsla(0,0%,0%,0);
+    color:white;
+    text-shadow: 0px 0px 8px black; */
+    /* justify-content: top;
+    display: flex */
+   
+    #open-fullscreen-btn {
+        background-color: transparent;
+        color: white;
+        opacity: 0.4;
+        font-size: 3em;
+        position: absolute;
+        bottom: 0;
+        right:0;
+        padding: 0.5em;
+        cursor: pointer;
+        }    
 
 section.rozhodovani > header  {
     /* background: rgba(255, 0, 0, 0.5); */
@@ -98,6 +120,7 @@ section.rozhodovani > header > h2 {
     /* background: rgba(0, 250, 0, 0.5); */
     font-size: 3em;
     font-weight: 400;
+    font-family: 'segoe ui';
     text-align: right;
     text-shadow: 0px 0px 8px black;
     color: white;
@@ -107,34 +130,40 @@ section.rozhodovani > header > h2 {
     margin-top: 6%;
 }
 
+/* .boxy-moznosti-rozhodnuti { 
+    font-size: 100px;
+    background-color: chocolate;
+}*/
+
 #moznosti-rozhodnuti{
     padding:5%;
     /* background: #aaa; */
     display: flex;
     flex-wrap: wrap;
 }
-
 #moznosti-rozhodnuti > button {
-    border:solid 1.5px hsl(204deg 94% 13%); 
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    display: inline-flex;
-    width:25%;
-    margin-right:2.5%;
-    padding:1em;
-    line-height:1.5em;
-    background: hsla(0, 0%, 100%, 0.5);
-    backdrop-filter: blur(10px);
-    color:hsl(204deg 94% 13%);
-    outline: none;
-    min-height: 12em;
-    flex-grow: 1;
-    width: 10%;
-    font-size: 2em;
-    font-weight: 500;
+ border:solid 1.5px hsl(204deg 94% 13%); 
+ display: inline-flex;
+  width:25%;
+  margin-right:2.5%;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:1em;
+  line-height:1.5em;
+  background: hsla(0, 0%, 100%, 0.5);
+  backdrop-filter: blur(10px);
+  color:hsl(204deg 94% 13%);
+  outline: none;
+  min-height: 12em;
+  flex-grow: 1;
+  width: 10%;
+  font-size: 2em;
+  font-family: 'segoe ui';
+  font-weight: 500;
+    
 }
-
 #moznosti-rozhodnuti > button:last-child {
     margin-right: 0;
+   
 }    
 
 #tlacitka > button {
@@ -143,17 +172,18 @@ section.rozhodovani > header > h2 {
     padding: 20px 75px;
     border:solid white;
     font-size: 1.5em;
-    background: hsla(0,0%,0%,0);
+     background: hsla(0,0%,0%,0);
     color:white;
     text-shadow: 0px 0px 8px black;
-    font-weight: bold;
-    cursor: pointer;
-}
+  font-family: 'segoe ui';
+  font-weight: bold;
+  cursor: pointer;
 
+}
 section.vyhodnoceni {
     margin-top: 15px;
-}
-
+   
+    }
 section.vyhodnoceni > header > h2 {
     margin: 0 auto;
     margin-top: 75px;
@@ -181,38 +211,40 @@ section.vyhodnoceni > header > p {
 #boxy-vyhodnoceni{
     margin-top: 80px;
     margin:2px;
-    margin-right: 200px;
-    line-height:2em;  
+ margin-right: 200px;
+  line-height:2em;
+   
 }
-
 #boxy-vyhodnoceni > p {
-    border:solid 1.5px hsl(204deg 94% 13%); 
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    display: block;
-    width:120%;
-    text-align: center;
-    padding-top: 70px;
-    line-height:1.5em;
-    background: hsla(0, 0%, 100%, 0.3);
-    backdrop-filter: blur(10px);
-    color:hsl(204deg 94% 13%);
-    outline: none;
-    min-height: 7em;
-    font-size: 1.3em;
+border:solid 1.5px hsl(204deg 94% 13%); 
+ display: block;
+   width:120%;
+  text-align: center;
+   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding-top: 70px;
+  line-height:1.5em;
+  background: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(10px);
+  color:hsl(204deg 94% 13%);
+  outline: none;
+  min-height: 7em;
+  font-size: 1.3em;
+
 }
 
 #boxy-vyhodnoceni > p + p {
     margin-top: 30px;
+  
 }
 
 #restart-btn {
-    background-color: transparent;
-    color: white;
-    opacity: 0.4;
-    font-size: 3em;
-    position: absolute;
-    bottom: 0;
-    right:0;
-    padding: 0.5em;
-    cursor: pointer;
+background-color: transparent;
+color: white;
+opacity: 0.4;
+font-size: 3em;
+position: absolute;
+bottom: 0;
+right:0;
+padding: 0.5em;
+cursor: pointer;
 }
