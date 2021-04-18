@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            background: blueviolet;
+            display: flex; /* namisto pod sebou da divz vedle sebe a dovoli je pozicovat pomoci justifz a align items */
+            flex-direction: column; /* vrati vertikalni poradi ale stale necha moynost pouyivat flex poyicovaci kouzla */
+            justify-content: space-evenly; /* rovnomerne rozmisti volne misto kolem objektu pokud volne misto existuje (otestovat pomoci background barvicek) a je super pro poyicovani na stred */
+            align-items: center; /* zrusi roztahovani divu pres celou stranku a namisto toho to zarovna na stred */
+        }
+
+        section > div {
+            width: 80%;
+            max-width: 800px;
+            height: 200px;
+            padding: 2em;
+        }
+
+        section > div.radek1 {
+            background: brown;;
+        }
+
+        section > div.radek2 {
+            background: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="radek1">adaosfijsoaidjf</div>
+        <div class="radek2">adaosfijsoaidjf</div>
+    </section>
+</body>
+</html>

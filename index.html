@@ -10,14 +10,32 @@
     <title>OSTROVNÍ ZEMĚ</title>
 </head>
 <body>
-    <section class="uvod" id="uvod">
+    <section class="uvod hide" id="uvod">
         <header>
-            <h1>ROZHODOVÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1>
-            <button id="tlacitko-zacit">ZAHÁJIT</button>
+            <h1>ZASEDÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1>
+            <div class="skupina"><input type="text" name="skupina" placeholder="Napiš" id="skupina=text"></div>
+            
+            <button id="tlacitko-pridat-se">PŘIDAT SE</button>
         </header>
+        
         <div id="tlacitko-fullscreen">
             <i class="fas fa-expand"></i>
         </div>
+        <div id="tlacitko-jsem-vedouci">
+            <i class="far fa-user"></i>
+        </div>
+    </section>
+
+    <section class="cekani-na-skupinu hide" id="cekani-na-skupinu">
+        <header>
+            <h1>VYČKEJTE NA ZAČÁTEK<br/>ROZHODOVÁNÍ</h1>
+        </header>
+    </section>
+
+    <section class="pred-vyhodnocenim hide" id="pred-vyhodnocenim">
+        <header>
+            <h1>ZASEDÁNÍ RADY OSTROVA<br/>SKONČILO</h1>
+        </header>
     </section>
 
     <section class="rozhodovani hide" id="rozhodovani"> 
@@ -43,7 +61,7 @@
         <header class="radek-1">
             <h2>ZÁKONY OSTROVNÍ ZEMĚ</h2>
             <p>V důsledku vašich rozhodnutí byly zvoleny tyto příslušné zákony</p>
-        </header>
+            </header>
 
         <div class="radek-2" id="boxy-vyhodnoceni">
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM, IPSUM DOLOR SIT AMET CONSECTETUR.</p>
@@ -51,10 +69,34 @@
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM.</p>
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM, IPSUM DOLOR SIT AMET CONSECTETUR</p>
         </div>
-
         <div class="radek-3" id="restart-btn">
             <i class="fas fa-retweet"></i>
         </div>
     </section>
+
+<section class="persona pozadi-cerne-pruhledne50" id="persona">
+    <div class="pro-vertikalni-zarovnani">
+        <div class="nadpis">
+            <h2>Stáváš se:</h2>
+        </div>
+        <div class="medailonek pazadi-bile-pruhledne50 pozadi-nastylovat-rozmazane text-bily text-se-stinem ramecek-bily ramecek-nastylovat-nerovne">
+            <div class="nalevo"> 
+                <img src="yasaman.jpg" alt="obrazek-role">
+            </div>
+            <div class="napravo" id="medailonek-role">
+            <h2>JMÉNO ROLE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores doloremque recusandae odio. Id eos at asperiores cupiditate ducimus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="dopady text-bily text-se-stinem  padding-2em">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repellendus nesciunt quidem porro culpa. Inventore modi, odit ex ut qui molestias dolore, quo cumque, corrupti expedita quos dignissimos eveniet hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum quasi exercitationem qui. Tempora ratione iste libero enim minus velit fugiat corporis voluptate? Animi ipsa aliquid earum rem harum possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet qui eligendi, voluptates corporis commodi asperiores voluptate alias eveniet voluptatibus, praesentium, placeat sint est quam tenetur! Maxime similique ullam expedita.</p>
+    </div>
+</section>
+
+    
+     
+       
+
 </body>
 </html>

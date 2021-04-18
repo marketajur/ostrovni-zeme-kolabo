@@ -1,4 +1,4 @@
-const startButton = document.getElementById('tlacitko-zacit')
+const startButton = document.getElementById('tlacitko-pridat-se')
 const restartButton = document.getElementById('restart-btn')
 // const nextButton = document.getElementById('schvalit-btn')
 const openFullScreen = document.getElementById('tlacitko-fullscreen')
