@@ -8,12 +8,18 @@ const answerButtonsElement = document.getElementById('moznosti-rozhodnuti')
 const kontejnerVyhodnoceni = document.getElementById('boxy-vyhodnoceni')
 
 const sekceUvod = document.getElementById('uvod')
+
+   // const sekceCekaniNaSkupinu = document.getElementById('cekani-na-skupinu')//
+
 const sekceRozhodovani = document.getElementById('rozhodovani')
 const sekceVyhodnoceni = document.getElementById('vyhodnoceni')
 
+   // const sekcePredVyhodnocenim = document.getElementById('pred-vyhodnocenim')
+   // const sekcePersona = document.getElementById('persona')//
+
 let shuffledQuestions, currentQuestionIndex
 
-var odpovediUzivatele = [0, 0, 0, 0]
+var odpovediUzivatele = [0, 0, 0, 0] //pole, array javascript tutorial / datove typy datatypes js//
 
 startButton.addEventListener('click', startGame)
 restartButton.addEventListener('click', ()=> {
@@ -24,6 +30,13 @@ restartButton.addEventListener('click', ()=> {
     sekceUvod.classList.remove('hide')
     sekceVyhodnoceni.classList.add('hide')
 })
+
+//window.onload = function(){
+//startGame()
+}//
+
+//let moznostiRozhodnuti = document.querySelector('moznosti-rozhodnuti');
+//moznostiRozhodnuti.addEventListener('click', () => moznostiRozhodnuti.style.backgroudColor='#ffffff')//
 
 openFullScreen.addEventListener('click', toggleFullscreen)
 
@@ -59,6 +72,11 @@ function closeFullscreen() {
     }
   }
     
+    //function startGame() {
+        //console.log('uvod')
+      //  sekceUvod.classList.add('hide')
+ //   sekceCekaniNaSkupinu.classList.remove('hide')//
+    //} 
 
 function startGame() {
     console.log('uvod') 
@@ -94,9 +112,18 @@ function vyhodnoceni() {
 
 function ulozitOdpovedAPokracovatNaDalsiOtazku(cisloKliknuteOdpovedi) {
     odpovediUzivatele[currentQuestionIndex] = cisloKliknuteOdpovedi.target.dataset.cisloOdpovedi
+    console.log('cisloKliknuteOdpovedi')
+    console.log(cisloKliknuteOdpovedi)
+    console.log('odpovediUzivatele')
     console.log(odpovediUzivatele)
     currentQuestionIndex++
 
+//najit rodice //javascript DOM parent children tutorial
+//vzit mu deti do promenne listDeti
+//pouyit for each loop a kazdemu diteti odebrat tridu .classlist.remove
+
+    cisloKliknuteOdpovedi.target.classList.toggle('stisknuto')
+return
     if(currentQuestionIndex<4) {
         setNextQuestion()
     } else {

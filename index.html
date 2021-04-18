@@ -10,13 +10,18 @@
     <title>OSTROVNÍ ZEMĚ</title>
 </head>
 <body>
-    <section class="uvod hide" id="uvod">
-        <header>
-            <h1>ZASEDÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1>
-            <div class="skupina"><input type="text" name="skupina" placeholder="Napiš" id="skupina=text"></div>
-            
-            <button id="tlacitko-pridat-se">PŘIDAT SE</button>
-        </header>
+    <!--ÚVOD -->
+    <section class="uvod hide" id="uvod">  
+        <div class="box">
+            <div class="nadpis"><h1 class="text-bily text-se-stinem">ZASEDÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1></div>
+            <div class="napis-text">
+                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="skupina" placeholder="Napiš skupinu" id="skupina">
+                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="prezdivka" placeholder="Přihlaš se jménem" id="prezdivka">
+            </div>
+            <div class="tlacitko-pridat-se">
+                <button id="tlacitko-pridat-se" class="text-bily">PŘIDAT SE</button>
+            </div>     
+        </div>
         
         <div id="tlacitko-fullscreen">
             <i class="fas fa-expand"></i>
@@ -45,7 +50,7 @@
 
         <div class="radek-2" id="moznosti-rozhodnuti">
             <button>PLACEHOLDER Přijmete utečence a dovolíte jim, aby s vámi žili na ostrově do doby, než se budou moci vrátit.</button>
-            <button>PLACEHOLDER Odmítnete je všechny s tím, aby pokračovali v cestě.</button>
+            <button class="stisknuto">PLACEHOLDER Odmítnete je všechny s tím, aby pokračovali v cestě.</button>
             <button>PLACEHOLDER Přijmete pouze ty běžence, kteří prokážou, že jim v jejich vlasti opravdu hrozí vážné nebezpečí pro předejetí komplikací.</button>
         </div>
             
@@ -74,12 +79,12 @@
         </div>
     </section>
 
-<section class="persona pozadi-cerne-pruhledne50" id="persona">
+<section class="persona active pozadi-cerne-pruhledne50" id="persona">
     <div class="pro-vertikalni-zarovnani">
         <div class="nadpis">
             <h2>Stáváš se:</h2>
         </div>
-        <div class="medailonek pazadi-bile-pruhledne50 pozadi-nastylovat-rozmazane text-bily text-se-stinem ramecek-bily ramecek-nastylovat-nerovne">
+        <div class="medailonek text-bily text-se-stinem ramecek-bily ramecek-nastylovat-nerovne padding-1em">
             <div class="nalevo"> 
                 <img src="yasaman.jpg" alt="obrazek-role">
             </div>
@@ -89,7 +94,7 @@
             </div>
         </div>
     </div>
-    <div class="dopady text-bily text-se-stinem  padding-2em">
+    <div class="dopady text-bily text-se-stinem">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repellendus nesciunt quidem porro culpa. Inventore modi, odit ex ut qui molestias dolore, quo cumque, corrupti expedita quos dignissimos eveniet hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum quasi exercitationem qui. Tempora ratione iste libero enim minus velit fugiat corporis voluptate? Animi ipsa aliquid earum rem harum possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet qui eligendi, voluptates corporis commodi asperiores voluptate alias eveniet voluptatibus, praesentium, placeat sint est quam tenetur! Maxime similique ullam expedita.</p>
     </div>
 </section>

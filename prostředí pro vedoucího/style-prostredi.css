@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+ section {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     width: 100vw;
+     background: chocolate;
+ }
+
+ section.rozhrani > .zahlavi {
+    background: red;
+    flex: 1;
+ }
+
+ section.rozhrani > .obsah {
+     display: flex;
+     flex-direction: row;
+     background: yellow;
+     flex: 9;
+ }
+ section.rozhrani > .obsah > .hlavni {
+     background: green;
+     flex: 4;
+     display: flex;
+     flex-direction: column;
+}
+
+section.rozhrani > .obsah > .hlavni > div {
+    background: yellow;
+    border: 1px solid black;
+    flex: 1;
+    
+}
+ section.rozhrani > .obsah > .bocni {
+     background: blue;
+     flex: 1
+ }
+
+ /* POMOCNÉ TŘÍDY */
+
+ .padding-1 {
+     padding: 1em;
+ }
+ .padding-2{
+     padding: 2em;
+ }
+
+ .text-dark {
+     color: black;
+ }
+ .text-light {
+     color: white;
+ }
+
+ 
+
+/* 
+
+
+.vyber-sekce
+
+.vyber-sekce > h2
+
+.vyber-sekce > button
+
+
+.vyber-situace
+
+.vyber-situace > h2
+
+.vyber-situace > button
+
+.vyber-situace > h3
+
+.vyber-situace > p
+
+
+.vysledky
+
+.vysledky > h2
+
+.vysledky > .vysledky-wrap
+
+.vysledky > h3
+
+.vysledky > p
+
+
+.panel-s-prihlasenymi
+
+.panel-s-prihlasenymi > h3
+
+.panel-s-prihlasenymi > ul
+
+.panel-s-prihlasenymi > ul > li
+
+ */

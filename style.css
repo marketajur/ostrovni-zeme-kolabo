@@ -61,36 +61,53 @@ button {
 /* SEKCE UVOD */
 
 section.uvod {
-    flex-direction: column;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
 }
 
-section.uvod > header  {
+section.uvod .box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-section.uvod > header > h1 {
+section.uvod > .box > .nadpis > h1{
     font-size: 5em;
     font-weight: 400;
     text-align: center;
-    text-shadow: 0px 0px 8px black;
-    color: white;
+    margin: 0;
 }
 
-section.uvod > header > .skupina {
-    text-align: center;
+::placeholder {
+    color:black;
 }
 
-section.uvod > header > .skupina > input {
+section.uvod > .box >.napis-text> input {
     font-size: 2em;
-    font-weight: 400;
+    width: 15em;
     text-align: center;
-    padding: 1em;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    width: 30em;
-    border: white;
+    display: block;
+    padding: 0.5em;
+    outline: none;
+    margin: 0.5em;
+    color: red;
+}
+
+section.uvod > .box >.napis-text> input:focus {
+    background: white;
+}
+
+#tlacitko-pridat-se{
+    width: 8em;
+    height: 3em;
+    border: white solid;
+    background: none ;
+    font-size: 1.5em;
 }
 
 /* SEKCE ČEKÁNÍ NA SKUPINU*/
@@ -185,6 +202,10 @@ section.rozhodovani > .radek-2 > button {
     width:29vw;
     padding: 3vw;
     font-size: 2.2em;
+}
+
+section.rozhodovani > .radek-2 > button.stisknuto {
+    background: red;
 }
 
 section.rozhodovani > .radek-2 > button:last-child {
@@ -413,7 +434,7 @@ section.persona{
 }
 
 .napravo > p{
-    font-size: 2em;
+    font-size: 2.0em;
     font-weight: 500;
 }
 
@@ -426,10 +447,20 @@ section.persona >.dopady{
     background: hsla(0, 0%, 100%, 0.3);
     backdrop-filter: blur(10px);
     color:hsl(204deg 94% 13%); */    
+    display: none;
+    width: 1200px;
 }
 section.persona > .dopady >p{
-    font-size: 2.5em;
+    font-size: 2.0em;
     font-weight: 400;
-    text-align:justify
+    text-align:justify;
+}
+
+section.persona.active > .dopady {
+    display: block;
+}
+
+section.persona.active .nadpis {
+    display: none;
 }
 
