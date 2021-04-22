@@ -96,11 +96,52 @@ section.uvod > .box >.napis-text> input {
     outline: none;
     margin: 0.5em;
     color: red;
+    margin-bottom: 0;
 }
 
 section.uvod > .box >.napis-text> input:focus {
     background: white;
 }
+
+/* section.uvod > .box > div > ul.gender{ 
+ 
+    white-space:nowrap;
+    padding: 0;
+    margin: 0;
+  
+}
+
+section.uvod > .box > div > .gender li{
+    display: inline;
+    list-style: none;
+    padding: 0.5em;
+    margin-top: 0;
+    margin: 0.5em;
+    font-size: 2em;*/
+
+
+input[type="radio"] {
+    display: inline;
+    height: 15px;
+    width: 15px;
+    border: solid 1.5px hsl(204deg, 94%, 13%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+   
+}
+
+label{
+    display: inline-table;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    background: hsla(0, 0%, 100%, 0.5);
+    border: solid 1.5px hsl(204deg, 94%, 13%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    
+}
+  
+   
+
 
 #tlacitko-pridat-se{
     width: 8em;
@@ -464,3 +505,16 @@ section.persona.active .nadpis {
     display: none;
 }
 
+
+section.persona.active > .tlacitko-zobrazeni-zakonu {
+    background-color: transparent;
+    background: none;
+    color: white;
+    opacity: 0.4;
+    font-size: 3em;
+    justify-items: center;
+    bottom: 0;
+    right:0;
+    padding: 0.5em;
+    cursor: pointer;
+}

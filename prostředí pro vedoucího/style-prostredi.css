@@ -11,36 +11,84 @@ body {
      flex-direction: column;
      height: 100vh;
      width: 100vw;
-     background: chocolate;
- }
+}
 
  section.rozhrani > .zahlavi {
-    background: red;
     flex: 1;
+    display: flex;
+    align-items: baseline;
+    background: yellow;
+    justify-content: center;
+ }
+ section.rozhrani > .zahlavi > div {
+     padding-right: 10px;
  }
 
  section.rozhrani > .obsah {
      display: flex;
      flex-direction: row;
-     background: yellow;
      flex: 9;
  }
+ section.rozhrani > .obsah > .hlavni > h2 {
+    background-color: yellow;
+ }
  section.rozhrani > .obsah > .hlavni {
-     background: green;
      flex: 4;
      display: flex;
      flex-direction: column;
+     
 }
 
 section.rozhrani > .obsah > .hlavni > div {
-    background: yellow;
-    border: 1px solid black;
-    flex: 1;
-    
+     flex: 1; 
+       
 }
+
+section.rozhrani > .obsah > .hlavni > div >.vnitrni-box {
+    display: flex;
+    flex-direction: row;
+}
+
+section.rozhrani > .obsah > .hlavni > div >.vnitrni-box > select{
+    flex: 8;
+    background: black;
+    height: 4em;
+    font-size: 1.2em;
+    color: white;
+    -webkit-appearance: none;
+    outline: none;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+
  section.rozhrani > .obsah > .bocni {
-     background: blue;
-     flex: 1
+     flex: 1;
+     display: flex;
+     background-color: black; 
+     flex-direction: column;
+ }
+ section.rozhrani > .obsah > .bocni > h3{
+     font-size: 3em;
+     text-align: center;
+ }
+
+section.rozhrani > .obsah > .bocni > h4 {
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    margin: 0;
+}
+     
+
+ section.rozhrani > .obsah > .bocni > ul.prihlaseni {
+     font-size: 1.2em;
+     padding: 0;
+ }
+ section.rozhrani > .obsah > .bocni > .prihlaseni li{   list-style: none;
+     padding: 0;
+
+
  }
 
  /* POMOCNÉ TŘÍDY */
@@ -59,8 +107,26 @@ section.rozhrani > .obsah > .hlavni > div {
      color: white;
  }
 
- 
+ .hide {
+     display: none;
+ }
 
+ .button {
+    border: solid 1.5px black;
+    background-color: black
+ }
+
+.nadpis-style {
+    background-color: yellow;
+    padding: 1em; padding-left: 2em; margin-left: -2em;
+}
+
+.tlacitka-sipky {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 50px;
+}
 /* 
 
 

@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script defer src="script.js"></script>
+    <script defer src="mira.js"></script>
     <script src="https://kit.fontawesome.com/adc65fe8a9.js" crossorigin="anonymous"></script>
     <title>OSTROVNÍ ZEMĚ</title>
 </head>
 <body>
     <!--ÚVOD -->
-    <section class="uvod hide" id="uvod">  
+    <section class="uvod" id="uvod">  
         <div class="box">
             <div class="nadpis"><h1 class="text-bily text-se-stinem">ZASEDÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1></div>
             <div class="napis-text">
                 <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="skupina" placeholder="Napiš skupinu" id="skupina">
                 <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="prezdivka" placeholder="Přihlaš se jménem" id="prezdivka">
+            </div>
+            <div>
+                <input type="radio" id="muž" name="gender" value="muž">
+                <label for="muž">muž</label><br>
+                <input type="radio" id="žena" name="gender" value="žena">
+                <label for="žena">žena</label>
             </div>
             <div class="tlacitko-pridat-se">
                 <button id="tlacitko-pridat-se" class="text-bily">PŘIDAT SE</button>
@@ -37,12 +44,6 @@
         </header>
     </section>
 
-    <section class="pred-vyhodnocenim hide" id="pred-vyhodnocenim">
-        <header>
-            <h1>ZASEDÁNÍ RADY OSTROVA<br/>SKONČILO</h1>
-        </header>
-    </section>
-
     <section class="rozhodovani hide" id="rozhodovani"> 
         <header class="radek-1">
              <h2 id="zneni-otazky">PLACEHOLDER Z jiného ostrova připluly stovky lidí utíkající před válkou. Tito lidé mají jiné zvyky, mluví cizím jazykem a přicházejí bez prostředků. Pro vás by jejich přijetí znamenalo tolerovat jejich odlišnost (projevovanou v mezích zákona) a pomoci jim určitými materiálními prostředky.</h2>
@@ -60,6 +61,12 @@
         <div id="tlacitko-fullscreen">
             <i class="fas fa-expand"></i>
         </div>
+    </section>
+
+    <section class="pred-vyhodnocenim hide" id="pred-vyhodnocenim">
+        <header>
+            <h1>ZASEDÁNÍ RADY OSTROVA<br/>SKONČILO</h1>
+        </header>
     </section>
 
     <section class="vyhodnoceni hide" id="vyhodnoceni">
@@ -96,6 +103,11 @@
     </div>
     <div class="dopady text-bily text-se-stinem">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repellendus nesciunt quidem porro culpa. Inventore modi, odit ex ut qui molestias dolore, quo cumque, corrupti expedita quos dignissimos eveniet hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum quasi exercitationem qui. Tempora ratione iste libero enim minus velit fugiat corporis voluptate? Animi ipsa aliquid earum rem harum possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet qui eligendi, voluptates corporis commodi asperiores voluptate alias eveniet voluptatibus, praesentium, placeat sint est quam tenetur! Maxime similique ullam expedita.</p>
+    </div>
+    <div class="tlacitko-zobrazeni-zakonu">
+        <button id="tlacitko-zobrazeni-zakonu">
+            <i class="fas fa-gavel"></i>
+        </button>
     </div>
 </section>
 

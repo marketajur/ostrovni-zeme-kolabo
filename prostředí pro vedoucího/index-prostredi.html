@@ -6,24 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prostředí pro vedoucího</title>
     <link rel="stylesheet" href="./style-prostredi.css">
+    <script src="https://kit.fontawesome.com/adc65fe8a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="rozhrani">
-        <div class="zahlavi">R</div>
-        <div class="obsah">
-            <div class="hlavni">
-                <div class="radek-1"></div>
-                <div class="radek-2"></div>
-                <div class="radek-3"></div>
+        <div class="zahlavi padding-1">
+            <div><h3>SKUPINA</h3></div>
+            <div>
+                <input type="text" name="jmeno-skupiny">
+                <button id="spustit-skupinu" class="button text-light">SPUSTIT</button>
+                <button class="hide" id="zavrit-skupinu">ZAVŘÍT</button>
             </div>
-            <div class="bocni">B</div>
         </div>
+        <div class="obsah">
+            <div class="hlavni padding-2">
+                <div class="radek-1">
+                    <h2 class="nadpis-style">VÝBĚR SEKCE</h2>
+                    <div class="vnitrni-box">
+                        <button class="tlacitka-sipky" >
+                        <i class="fas fa-caret-left"></i>
+                        </button>
+                        <select id="vyber-sekce">
+                        <option>-- VÝBĚR SEKCE --</option>
+                        <option>2: Čekání</option>
+                        <option>3: Rozhodování</option>
+                        <option>4: Před vyhodnocením</option>
+                        <option>5: Vyhodnocení</option>
+                        <option>6A: Persona</option>
+                        <option>6B: Persona dopady</option>
+                        </select>
+                        <button id="vpravo-vyber-sekce" class="tlacitka-sipky">
+                        <i class="fas fa-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="radek-2">
+                    <h2 class="nadpis-style">VÝBĚR SITUACE</h2>
+                    <div class="vnitrni-box"> 
+                        <button id="vlevo-vyber-situace" class="tlacitka-sipky">
+                        <i class="fas fa-caret-left"></i>
+                         </button>
+                        <select id="vyber-situace">
+                        <option>-- VÝBĚR SITUACE --</option>
+                        <option>1. </option>
+                        <option>2. </option>
+                        <option>3. </option>
+                        <option>4. </option>
+                        <option>5. </option>
+                        <option>6. </option>
+                        </select>
+                        <button id="vpravo-vyber-situace" class="tlacitka-sipky"> <i class="fas fa-caret-right"></i>
+                        </button>
+                    </div>
+                        <h3>PLACEHOLDER Z jiného ostrova připluly stovky lidí utíkající před válkou. Tito lidé mají jiné zvyky, mluví cizím jazykem a přicházejí bez prostředků. Pro vás by jejich přijetí znamenalo tolerovat jejich odlišnost (projevovanou v mezích zákona) a pomoci jim určitými materiálními prostředky.</h3>
+                        <p>PLACEHOLDER Přijmete utečence a dovolíte jim, aby s vámi žili na ostrově do doby, než se budou moci vrátit. <hr> PLACEHOLDER Odmítnete je všechny s tím, aby pokračovali v cestě.<hr>PLACEHOLDER Přijmete pouze ty běžence, kteří prokážou, že jim v jejich vlasti opravdu hrozí vážné nebezpečí pro předejetí komplikací.</p>
+                    </div>
+                
+                <div class="radek-3">
+                    <h2 class="nadpis-style">VÝSLEDKY</h2>
+                    <div class="vysledky-wrap">
+                    <h3>Znění otázky</h3>
+                    <p> odpověď A: 5hlasů/x%</p>
+                    <p> odpověď B: 5hlasů/x%</p>
+                    <p> odpověď C: 5hlasů/x%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bocni text-light padding-1">
+                <h3>24</h3>
+                <h4>PŘIHLÁŠENÍ</h4>
+                <ul class="prihlaseni">
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                    <li>Krtek</li>
+                    <li>Tučňák</li>
+                </ul>
+            </div>
+        </div>
+       
     </section>
-        <!-- <div class="zahlavi"> 
-            <h3>SKUPINA</h3>
-            <input type="text" name="jmeno-skupiny">
-            <button>SPUSTIT</button>
-        </div>
+        <!-- 
         <div class="vyber-sekce">
             <h2>VÝBĚR SEKCE</h2>
             <button>2</button>

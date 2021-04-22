@@ -33,7 +33,7 @@ restartButton.addEventListener('click', ()=> {
 
 //window.onload = function(){
 //startGame()
-}//
+//}
 
 //let moznostiRozhodnuti = document.querySelector('moznosti-rozhodnuti');
 //moznostiRozhodnuti.addEventListener('click', () => moznostiRozhodnuti.style.backgroudColor='#ffffff')//
