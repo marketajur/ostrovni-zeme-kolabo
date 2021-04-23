@@ -139,16 +139,21 @@ label{
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     
 }
-  
-   
 
-
-.button-login{
+.button-login {
     width: 8em;
     height: 3em;
     border: white solid;
     background: none ;
+    color: white;
     font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button-login:hover {
+    background: white;
+    color: black;
 }
 
 /* SEKCE ČEKÁNÍ NA SKUPINU*/
