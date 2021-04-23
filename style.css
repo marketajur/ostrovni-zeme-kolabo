@@ -29,11 +29,11 @@ body {
     transition: background-position-y 2s;
 }
 
-button {
+.button {
     cursor: pointer;
 }
        
-#tlacitko-fullscreen {
+.button-fullscreen {
     background-color: transparent;
     color: white;
     opacity: 0.4;
@@ -45,7 +45,7 @@ button {
     cursor: pointer;
 }
 
-#tlacitko-jsem-vedouci {
+.button-leader-login {
     color: white;
     opacity: 0.4;
     font-size: 3em;
@@ -143,7 +143,7 @@ label{
    
 
 
-#tlacitko-pridat-se{
+.button-login{
     width: 8em;
     height: 3em;
     border: white solid;
@@ -328,17 +328,6 @@ section.vyhodnoceni > .radek-2 > p {
     margin:1vw
 }
 
-section.vyhodnoceni > #restart-btn {
-    background-color: transparent;
-    color: white;
-    opacity: 0.4;
-    font-size: 3em;
-    position: absolute;
-    bottom: 0;
-    right:0;
-    padding: 0.5em;
-    cursor: pointer;
-}
 
 @media only screen and (max-width: 768px) {
     body {
@@ -506,15 +495,3 @@ section.persona.active .nadpis {
 }
 
 
-section.persona.active > .tlacitko-zobrazeni-zakonu {
-    background-color: transparent;
-    background: none;
-    color: white;
-    opacity: 0.4;
-    font-size: 3em;
-    justify-items: center;
-    bottom: 0;
-    right:0;
-    padding: 0.5em;
-    cursor: pointer;
-}

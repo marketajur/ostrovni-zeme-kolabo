@@ -12,28 +12,28 @@
 </head>
 <body>
     <!--ÚVOD -->
-    <section class="uvod" id="uvod">  
-        <div class="box">
+    <section class="uvod">
+            <div class="box">
             <div class="nadpis"><h1 class="text-bily text-se-stinem">ZASEDÁNÍ RADY<br/>OSTROVNÍ ZEMĚ</h1></div>
             <div class="napis-text">
-                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="skupina" placeholder="Napiš skupinu" id="skupina">
-                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="prezdivka" placeholder="Přihlaš se jménem" id="prezdivka">
+                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="skupina" placeholder="Napiš skupinu" id="login-input-group">
+                <input type="text" class="pozadi-bile-pruhledne50 ramecek-nastylovat-nerovne" name="prezdivka" placeholder="Přihlaš se jménem" id="login-input-name">
             </div>
             <div>
-                <input type="radio" id="muž" name="gender" value="muž">
+                <input type="radio" id="login-input-man" name="gender" value="muž">
                 <label for="muž">muž</label><br>
-                <input type="radio" id="žena" name="gender" value="žena">
+                <input type="radio" id="login-input-woman" name="gender" value="žena">
                 <label for="žena">žena</label>
             </div>
-            <div class="tlacitko-pridat-se">
-                <button id="tlacitko-pridat-se" class="text-bily">PŘIDAT SE</button>
+            <div class="button-login">
+                <button id="button-login" class="text-bily">PŘIDAT SE</button>
             </div>     
         </div>
         
-        <div id="tlacitko-fullscreen">
+        <div class="button-fullscreen" id="button-fullscreen">
             <i class="fas fa-expand"></i>
         </div>
-        <div id="tlacitko-jsem-vedouci">
+        <div class="button-leader-login" id="button-leader-login">
             <i class="far fa-user"></i>
         </div>
     </section>
@@ -46,10 +46,10 @@
 
     <section class="rozhodovani hide" id="rozhodovani"> 
         <header class="radek-1">
-             <h2 id="zneni-otazky">PLACEHOLDER Z jiného ostrova připluly stovky lidí utíkající před válkou. Tito lidé mají jiné zvyky, mluví cizím jazykem a přicházejí bez prostředků. Pro vás by jejich přijetí znamenalo tolerovat jejich odlišnost (projevovanou v mezích zákona) a pomoci jim určitými materiálními prostředky.</h2>
+             <h2 id="question-body">PLACEHOLDER Z jiného ostrova připluly stovky lidí utíkající před válkou. Tito lidé mají jiné zvyky, mluví cizím jazykem a přicházejí bez prostředků. Pro vás by jejich přijetí znamenalo tolerovat jejich odlišnost (projevovanou v mezích zákona) a pomoci jim určitými materiálními prostředky.</h2>
         </header>
 
-        <div class="radek-2" id="moznosti-rozhodnuti">
+        <div class="radek-2" id="question-options">
             <button>PLACEHOLDER Přijmete utečence a dovolíte jim, aby s vámi žili na ostrově do doby, než se budou moci vrátit.</button>
             <button class="stisknuto">PLACEHOLDER Odmítnete je všechny s tím, aby pokračovali v cestě.</button>
             <button>PLACEHOLDER Přijmete pouze ty běžence, kteří prokážou, že jim v jejich vlasti opravdu hrozí vážné nebezpečí pro předejetí komplikací.</button>
@@ -58,7 +58,7 @@
         <div class="radek-3" id="tlacitka">
             <!-- <button id="schvalit-btn">SCHVÁLIT ROZHODNUTÍ</button> -->
         </div>
-        <div id="tlacitko-fullscreen">
+        <div class="button-fullscreen" id="button-fullscreen">
             <i class="fas fa-expand"></i>
         </div>
     </section>
@@ -75,15 +75,13 @@
             <p>V důsledku vašich rozhodnutí byly zvoleny tyto příslušné zákony</p>
             </header>
 
-        <div class="radek-2" id="boxy-vyhodnoceni">
+        <div class="radek-2" id="laws">
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM, IPSUM DOLOR SIT AMET CONSECTETUR.</p>
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM, IPSUM DOLOR SIT AMET CONSECTETUR.LOREM, IPSUM DOLOR SIT AMET.</p>
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM.</p>
             <p>LOREM, IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.LOREM, IPSUM DOLOR SIT AMET CONSECTETUR</p>
         </div>
-        <div class="radek-3" id="restart-btn">
-            <i class="fas fa-retweet"></i>
-        </div>
+     
     </section>
 
 <section class="persona active pozadi-cerne-pruhledne50" id="persona">
@@ -95,20 +93,20 @@
             <div class="nalevo"> 
                 <img src="yasaman.jpg" alt="obrazek-role">
             </div>
-            <div class="napravo" id="medailonek-role">
+            <div class="napravo" id="persona-card">
             <h2>JMÉNO ROLE</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores doloremque recusandae odio. Id eos at asperiores cupiditate ducimus.</p>
             </div>
         </div>
     </div>
-    <div class="dopady text-bily text-se-stinem">
+    <div class="dopady text-bily text-se-stinem" id="persona-summary">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repellendus nesciunt quidem porro culpa. Inventore modi, odit ex ut qui molestias dolore, quo cumque, corrupti expedita quos dignissimos eveniet hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum quasi exercitationem qui. Tempora ratione iste libero enim minus velit fugiat corporis voluptate? Animi ipsa aliquid earum rem harum possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet qui eligendi, voluptates corporis commodi asperiores voluptate alias eveniet voluptatibus, praesentium, placeat sint est quam tenetur! Maxime similique ullam expedita.</p>
     </div>
-    <div class="tlacitko-zobrazeni-zakonu">
+    <!-- <div class="tlacitko-zobrazeni-zakonu"> 
         <button id="tlacitko-zobrazeni-zakonu">
             <i class="fas fa-gavel"></i>
         </button>
-    </div>
+    </div> -->
 </section>
 
     
